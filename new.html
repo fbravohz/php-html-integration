@@ -1,0 +1,14 @@
+<div class="content">
+    <form class="form">
+	    <input type="hidden" name="redirigir" value="<?=$redirect?>" />
+	    <img class="logo" src="<?=base_url();?>img/logoGrowhillb.png">
+        <!-- <?php if($this->input->get("mensaje")){?>
+            <div class="errorLogin">
+                <?=$this->input->get("mensaje")?>
+            </div>
+        <?php }?> -->
+        <input type="text" autocomplete="<?=time()?>" name="nombre" class="texto" placeholder="Nombre de Usuario" required="required"/>
+        <input type="password" autocomplete="<?=time()?>" name="password" class="texto" placeholder="Contrase&ntilde;a" required="required"/>
+		<input type="submit" name="submit" value="Entrar" class="boton"/>
+    </form>
+</div>
